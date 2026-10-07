@@ -1,115 +1,124 @@
-// string
-// const name = "Budi";
-// const welcome = `Selamat datang, ${name}`;
-// welcome = welcome + ". Apa kabar?";
-// console.log(welcome + ". Apa kabar?");
-
-// Number
-// let score = 100;
-// score += 5;
-// const newScore = score;
-// console.log(score);
-// console.log((newScore += 12));
-
-// let isMarried = false;
-// console.log(isMarried);
-
-// const name = null;
-// console.log(name);
-
-// const hobbies = [
-//   "Gaming",
-//   "Swimming",
-//   "Hiking",
-//   undefined,
-//   ["Hello", ["Hallo", ["World"]]],
-// ];
-// hobbies[5] = "Sleeping";
-// hobbies.splice(2, 0, "Diving");
-// console.log(hobbies);
-
-// const angka = [
-//   [1, 2, 3],
-//   [4, 5, 6],
-//   [7, 8, 9],
-// ];
-// angka[3] = [10, 11, 12];
-// angka[0] = [13, 14, 15];
-// angka[3][3] = [16, 17, 18];
-// angka[3][3][3] = [19, 20, 21];
-// console.log(angka[3][3][3]);
-
-// const highSchool = {
-//   name: "Koda Academy",
-//   year: 2021,
-//   student: {
-//     name: "Afif",
-//     kelas: 10,
-//   },
-//   hobbies: [
-//     "Hiking",
-//     "Sleeping",
-//     "Eating",
-//     "Coding",
-//     {
-//       name: "padel",
-//       details: "i love padel",
-//       with: [
-//         "rizal",
-//         "zakky",
-//         {
-//           istri: "Eli Putri",
-//           suami: "Chandra",
-//           domisili: ["Depok", 16459, "Leuwinanggung"],
-//         },
-//       ],
-//     },
-//   ],
+// // const isMarried = false;
+// const bio = {
+//   isMarried: false,
 // };
-// highSchool.hobbies[4].with[2] = "alvin";
-// console.log(highSchool.hobbies[4].with[2].domisili[1] + 3);
+// const age = 30;
 
-const bios = {
-  name: "John",
-  age: 30,
-  schools: {
-    name: "Unindra",
-    year: 2018,
-  },
-};
-// const name = bio.name;
-// const age = bio.age;
-// const { age, name: myName } = bio;
-// bio.school.name
-const { schools } = bios;
-const { name } = schools;
-console.log(`Halo aku ${name}`);
+// if (age >= 30) {
+//   bio.isMarried = true;
+// }
+// if (bio.isMarried) {
+//   console.log("Sudah punya istri");
+// } else {
+//   console.log("Nikah woy");
+// }
 
-// Desctructuring Array
-const hobbies = ["Gaming", "Swimming", "Hiking"];
-const [, , thirdHobby] = hobbies;
-console.log(thirdHobby);
+// const age = 20;
+// const hasKtp = true;
 
-console.log("``````````````````````````````````````````````");
-// Destructuring Nested Array/Object
-const bio = {
-  hobbies: [
-    "hiking",
-    "swimming",
-    "Gaming",
-    "Programming",
-    {
-      nama: "padel",
-      details: "i love padel",
-      with: ["Doni", "Rini"],
-    },
-  ],
-};
+// if (age >= 17 && hasKtp === false) {
+//   console.log("Boleh buat SIM");
+// } else {
+//   console.log("Mending Nembak");
+// }
 
-const { hobbies: hby } = bio;
-const [, , , , bebas] = hby;
-console.log(bebas);
-const { nama, details, with: friends } = bebas;
-console.log(nama);
-console.log(details);
-console.log(friends);
+// let grade = "";
+
+// if (score > 90) {
+//   grade = "A";
+// } else if (score !== 80) {
+//   grade = "B";
+// } else if (score > 75) {
+//   grade = "C";
+// } else {
+//   grade = "F";
+// }
+// console.log(grade);
+
+// const isLogin = false;
+// console.log(isLogin);
+// console.log(!isLogin);
+// const name = "asdas";
+
+// if (isLogin) {
+//   console.log("Truthy");
+// } else {
+//   console.log("Falsey");
+// }
+// console.log(Boolean(-1));
+// console.log(Boolean(1));
+// console.log(Boolean(0));
+
+// console.log(Boolean("Hello"));
+// console.log(Boolean(""));
+
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(NaN));
+
+// console.log(Boolean([]));
+// console.log(Boolean({}));
+
+// const username = "";
+// console.log(Boolean(username));
+// console.log(!username);
+
+// const role = "admin";
+
+// switch (role) {
+//   case "admin":
+//     const pilih = 1;
+
+//     switch (pilih) {
+//       case 1:
+//         console.log("1. Makanan");
+
+//         break;
+//       case 2:
+//         console.log("2. Minuman");
+//         break;
+//       default:
+//         console.log("Salah pilih");
+//     }
+//     break;
+//   case "member":
+//     console.log("Welcome member");
+//     break;
+//   case "guest":
+//     console.log("Welcome Guest");
+//     break;
+
+//   default:
+//     console.log("Role tidak dikenali");
+// }
+
+// PERULANGAN
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
+// let i = 1;
+// while (i <= 5) {
+//   console.log(i);
+//   i++;
+// }
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 5);
+
+
+// Mini Task
+// Buat program JavaScript yang memiliki variable:
+// const mode = "fizzbuzz";
+// Program memiliki 3 pilihan mode:
+// "fizzbuzz"
+// "odd-even"
+// "multiplication"
+// Gunakan switch-case untuk menentukan proses berdasarkan nilai mode.
+// 1 - 20 
+// pekalian 3 dan 5 fizzbuzz 
+
+// 1 - 10
+// 1. Ganjil 2. Genap 3. Ganjil
+// 1 + 1 = 2, 1 + 2 = 3, 1 + 3 = 4, 
